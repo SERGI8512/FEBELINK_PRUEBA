@@ -1,20 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      FEBELINK - PRUEBA TÉCNICA - PIEDRA, PAPEL O TIJERA
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="tablero">
+      <h5 style="color: white; width: 100%;">TABLERO DE JUEGO</h5>
+      <h5 style="color: white; width: 100%;">PIEDRA, PAPEL O TIJERA</h5>
+      <div class="jugada">
+        <div class="userJugada"></div>
+        <div class="appJugada"></div>
+      </div>
+      <button>JUGAR</button>
+    </div>
+    <div class="resultados">
+      <!-- <h6 style="color: red; width: 100%;">ÚLTIMAS 10 TIRADAS</h6> -->
+      <div class="tirada" style="width: 25%; height: 290px; background-color: royalblue; border: 1px solid black;">
+        TIRADA</div>
+      <div class="user" style="width: 25%; height: 290px; background-color: royalblue; border: 1px solid black;">USER
+      </div>
+      <div class="app" style="width: 25%; height: 290px; background-color: royalblue; border: 1px solid black;">APP
+      </div>
+      <div class="win" style="width: 25%; height: 290px; background-color: royalblue; border: 1px solid black;">WINER
+      </div>
+      <!-- <table>
+        <th>Tirada</th>
+        <td>1</td>
+        <th>Tirada</th>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </table> -->
+      <button id="reiniciar">REINICIAR RESULTADOS</button>
+    </div>
+
   </div>
 </ion-content>
