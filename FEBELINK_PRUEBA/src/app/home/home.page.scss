@@ -1,11 +1,14 @@
 #container {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 20px;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #container strong {
@@ -24,4 +27,59 @@
 
 #container a {
   text-decoration: none;
+}
+
+ion-title{
+  color: red;
+  text-align: center;
+}
+
+.tablero{
+width: 600px;
+height: 350px;
+background-color: royalblue;
+margin: 20px;
+justify-content: center;
+}
+
+.resultados{
+  width: 400px;
+  height: 350px;
+  background-color: orange;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#reiniciar{
+  margin: auto;
+  width: 50%;
+  padding: 8px;
+}
+
+.jugada{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 35px;
+}
+
+.userJugada{
+  width: 47%;
+  height: 120px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.appJugada{
+  width: 47%;
+  height: 120px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.tablero>button{
+  margin-top: 35px;
+  width: 30%;
+  padding: 16px;
 }
